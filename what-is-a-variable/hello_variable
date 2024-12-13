@@ -1,5 +1,6 @@
 #!/bin/bash
 
 # Welcome to your first Bash Script
-
-echo 'Hello World!'
+variable='Hello World!'
+current_dir=$(pwd)
+echo ${variable} from $current_dir
