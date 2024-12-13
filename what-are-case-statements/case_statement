@@ -5,13 +5,13 @@
 read -p "Enter a number: " n
 case $n in
     ???) 
-        echo "One";;
+        echo "Three characters";;
     2) 
         echo "Two";;
-    aa) 
-        echo "Three";;
+    [3-9]) 
+        echo "Three to nine";;
     *.txt) 
-        echo "Four";;
+        echo "Ends with .txt";;
     *) 
         echo "Other";;
 esac

@@ -1,18 +1,12 @@
 #!/bin/bash
 
-check_even () {
-    local mod=2
-    echo "The value of mod is $mod"
-    if [ $(("$1" % $mod)) -eq 0 ]
-    then 
-       echo "The number $1 is even!";
-    else 
-       echo "The number $1 is odd!"
-    fi
+add_numbers () {
+    sum=$(("$1" + "$2"));
+    echo "The sum is ${sum}"
 }
 
+# read a b
+read -p "Enter number 1:" a
+read -p "Enter number 2:" b
 
-number=2344
-
-check_even $number
-echo $mod
+add_numbers $a $b

@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # Welcome to your first Bash Script
-variable='Hello World!'
+var='Hello World!'
 current_dir=$(pwd)
-echo ${variable} from $current_dir
+
+readonly color="blue"
+color="red" #Cannot modify readonly variables
+
+echo "${var} from $current_dir and your favourite color is $color"
+
+# Single quotes potentially correspond to strings
+echo '${var} from $current_dir and your favourite color is $color'
